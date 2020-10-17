@@ -1,0 +1,40 @@
+package com.practice.chapterone;
+
+public class StringPractice {
+	//This Practice is from PluralSight, and Youtube
+	
+	//revision from https://app.pluralsight.com/course-player?clipId=27386189-8923-4381-985b-7559af0c1bf2
+	public static void stringEqualityCompareTo() {
+		String s1 = "I Love";
+		s1 = s1+" Java";
+		String s3 = s1.intern();
+		
+		//Strings variables hold a reference to an instance of a String
+		//Strings are immutable
+		//When an existing string is modified, Java creates a new instance of a string
+		//The reference is re-pointed to the new String
+		
+		String s2 = "I Love";
+		String s4 = s2.intern();
+		
+		System.out.println(s1==s2);
+		
+		if(s1.compareTo(s2)==0) {
+			System.out.println("s1 is equal to s2 using compareTo");
+		}
+		
+		if(s1.equals(s2)) {
+			System.out.println("s1 is equal to s2 using Equals");
+		}
+		
+		//Intern method is can be used for Object comparison and gives better performance
+		if(s3==s4) {
+			System.out.println("s1 is equal to s2 using Intern");
+		}
+	}
+	
+	public static void main(String[] args) {
+		stringEqualityCompareTo();
+	}
+	
+}
