@@ -2,7 +2,6 @@ package com.practice.chapterone;
 
 public class StringPractice {
 	//This Practice is from PluralSight, and Youtube
-	//https://www.youtube.com/watch?v=N63JCXwdd14
 	//revision from https://app.pluralsight.com/course-player?clipId=27386189-8923-4381-985b-7559af0c1bf2
 	public static void stringEqualityCompareTo() {
 		String s1 = "I Love";
@@ -71,17 +70,14 @@ public class StringPractice {
 		//trim: to remove whitespace
 		String[] names = str.split(" "); //Splitting based on whitespace
 		for(String s:names) {
-			System.out.print(s.trim() + " ");
+			System.out.print(s.trim());
 		}
-		System.out.println();
 		
+		System.out.println();
 		//isEmpty
 		if(!str.isEmpty()) {
 			System.out.println("This is not an empty String");
 		}
-		
-		StringBuilder builder = new StringBuilder("Mutable");
-		builder.append(" String");
 	}
 	
 	public static void main(String[] args) {

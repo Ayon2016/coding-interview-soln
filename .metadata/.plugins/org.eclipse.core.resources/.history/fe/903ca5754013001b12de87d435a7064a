@@ -1,0 +1,32 @@
+package com.practice.chapterone;
+
+import java.util.Scanner;
+
+public class YoutubeProblems {
+ //Practice Problems from https://www.youtube.com/watch?v=-Xa6b_2lkM0
+	
+	public static void reverseString(String str) {
+		if(!str.isEmpty()) {
+			char[] strCharArray = str.toCharArray();
+			StringBuilder builder = new StringBuilder();
+			for(int i =str.length()-1; i>=0;i--) {
+				builder.append(strCharArray[i]);
+			}
+			System.out.println(builder);
+		}
+		else {
+			System.out.println("Please check the format of the String");
+		}
+		
+	}
+	
+	public static void reverseWordsofString(String str, String delimeter) {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		reverseString(in.nextLine());
+	}
+}

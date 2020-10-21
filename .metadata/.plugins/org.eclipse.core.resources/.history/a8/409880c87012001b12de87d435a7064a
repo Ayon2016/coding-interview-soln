@@ -2,7 +2,7 @@ package com.practice.chapterone;
 
 public class StringPractice {
 	//This Practice is from PluralSight, and Youtube
-	//https://www.youtube.com/watch?v=N63JCXwdd14
+	
 	//revision from https://app.pluralsight.com/course-player?clipId=27386189-8923-4381-985b-7559af0c1bf2
 	public static void stringEqualityCompareTo() {
 		String s1 = "I Love";
@@ -31,7 +31,7 @@ public class StringPractice {
 		}
 	}
 	
-	public static void stringMethods() {
+	public void stringMethods() {
 		String str = "Ayon loves technology";
 		//Length
 		System.out.println("String Length is " +str.length());
@@ -60,33 +60,11 @@ public class StringPractice {
 		//Replace
 		String s3 = str.replace('A','M');
 		
-		//toCharArray: To split the String into an array of chars
-		char[] toCharArray = str.toCharArray();
-		for(char ch: toCharArray) {
-			System.out.print(ch + " ");
-		}
-		System.out.println();
-		
-		//Split: to spit the String into an array if Strings using a regex
-		//trim: to remove whitespace
-		String[] names = str.split(" "); //Splitting based on whitespace
-		for(String s:names) {
-			System.out.print(s.trim() + " ");
-		}
-		System.out.println();
-		
-		//isEmpty
-		if(!str.isEmpty()) {
-			System.out.println("This is not an empty String");
-		}
-		
-		StringBuilder builder = new StringBuilder("Mutable");
-		builder.append(" String");
+		//Trim
 	}
 	
 	public static void main(String[] args) {
 		stringEqualityCompareTo();
-		stringMethods();
 	}
 	
 }

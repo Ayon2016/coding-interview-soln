@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.practice.chapterone.ReverseString_YoutubeProblem.java&apos; to &apos;YoutubeProblems.java&apos;&#x0A;- Original project: &apos;BookPractice&apos;&#x0A;- Original element: &apos;com.practice.chapterone.ReverseString_YoutubeProblem.java&apos;&#x0A;- Renamed element: &apos;com.practice.chapterone.YoutubeProblems.java&apos;" description="Rename compilation unit &apos;ReverseString_YoutubeProblem.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.practice.chapterone{ReverseString_YoutubeProblem.java" name="YoutubeProblems.java" references="false" stamp="1603157573586" version="1.0"/>
+</session>
