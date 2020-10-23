@@ -22,13 +22,12 @@ public class YoutubeProblems {
 	
 	public static void reverseWordsofString(String str, String delimeter) {
 		if(!str.isEmpty()) {
-			String[] strArray = str.split(delimeter); //{"I","Love","Coding"}
+			String[] strArray = str.split(delimeter);
 			int lengthofSentence = strArray.length;
 			StringBuffer buffer = new StringBuffer();
 			for (int i=0; i<=lengthofSentence-1;i++) {
 				int length = strArray[i].length();
 				char[] str2 = strArray[i].toCharArray();
-
 				for(int j=0;j<=length-1;j++) {
 					buffer.append(str2[length-1-j]);
 				}
